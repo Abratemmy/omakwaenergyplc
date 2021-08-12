@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Otherpages from '../../components/otherpages/otherpages'
+import Underline from '../../components/textunderline/textunderline'
 import Card from './aboutCard/card'
 
 export class Partners extends Component {
@@ -7,6 +8,26 @@ export class Partners extends Component {
         return (
             <div>
                 <Otherpages title="Customers and Patners" pagetitle="clients"/>
+
+                <div className="page-container">
+                    <div className="about-partner">
+                        <h1 className="text-center wow slideInLeft">Our Partners</h1>
+                        <div className="title-underline">
+                            <Underline/>
+                        </div>
+                        <div className="about-partner-text">
+                            <div className="row">
+                                <div className="col-lg-3 col-md-2 col-sm-12"></div>
+                                <div className="col-lg-6 col-md-10 col-sm-12">
+                                Omakwa Energy works with seasoned and world class OEMs in 
+                                Solar Energy Equipment/Technology to bring clean and sustainable energy to to our valued Customers.
+                                </div>
+                                <div className="col-lg-3 col-md-2 col-sm-12"></div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
 
                 <div className="page-container">
                     <Card

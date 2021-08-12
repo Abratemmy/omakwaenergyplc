@@ -111,3 +111,17 @@
     background: var(--primaryColor);
     transform: rotateZ(360deg)
 }
+
+/* about partner css starts here */
+.about-partner{
+    padding: 50px 0px;
+}
+.about-partner-text{
+    justify-content: center;
+    text-align: center;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 40px;
+}

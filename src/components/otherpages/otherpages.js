@@ -16,7 +16,7 @@ export class Otherpages extends Component {
                     <div className="page-container otherpages-container">
                         <h1 className="other-page-heading wow fadeInUp">{this.props.title}</h1>
                         <div className="other-pages-span wow fadeInUpBig">
-                            <NavLink to='/omakwaenergy' className="otherpage-navlink">Home </NavLink>  
+                            <NavLink to='/omakwaenergyplc' className="otherpage-navlink">Home </NavLink>  
                             > <span>{this.props.pagetitle}</span>
                         </div>
                     </div>

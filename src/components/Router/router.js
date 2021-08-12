@@ -9,7 +9,7 @@ import Home from '../../pages/homepage/home';
 
 const Router = ()=>(
     <Switch>
-        <Route exact path = '/' component ={Home} />
+        <Route exact path = '/omakwaenergyplc' component ={Home} />
         <Route exact path = '/about' component={About} />
             <Route exact path = '/about/purpose_values' component={Purposes} />
             <Route exact path='/about/strategy' component={Strategy} />

@@ -32,7 +32,7 @@ function Navbar() {
                 <div className="nav-palava">
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
+                            <NavLink to="/omakwaenergyplc"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
 
                         <span className="dropdown-span">
@@ -40,10 +40,10 @@ function Navbar() {
                                 <NavLink to="/about"activeClassName="active" className="nav-links " onClick={handleClick}>About us</NavLink>
                            
                             <div className="nav-dropdown">
-                                    <div className="dropdownlist"><NavLink to="/about/purpose_values" className="nav-dropdown-nav">Our purpose</NavLink></div>
-                                    <div className="dropdownlist"><NavLink to="/about/strategy" className="nav-dropdown-nav">Our strategy</NavLink></div>
-                                    <div className="dropdownlist"><NavLink to="/about/our_customer_partner" className="nav-dropdown-nav">Customers & Partners</NavLink></div>
-                                    <div className="dropdownlist"><NavLink to="/testimony" className="nav-dropdown-nav">testimony</NavLink></div>
+                                <NavLink to="/about/purpose_values" className="nav-dropdown-nav">Our purpose</NavLink>
+                                <NavLink to="/about/strategy" className="nav-dropdown-nav">Our strategy</NavLink>
+                                <NavLink to="/about/our_customer_partner" className="nav-dropdown-nav">Customers & Partners</NavLink>
+                                <NavLink to="/testimony" className="nav-dropdown-nav">testimony</NavLink>
                             </div>                    
                             </li> </span>
                         <li className="nav-item">

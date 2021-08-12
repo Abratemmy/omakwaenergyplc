@@ -160,15 +160,8 @@ margin-top:25px;
   z-index:999;
   display: none;
 }
-.dropdown-span .dropdownlist{
-  list-style: none;
-  text-align: left;
-  margin-bottom: 20px;
-  width: 100%;
-  line-height: 20px;
-}
+
 .nav-dropdown .nav-dropdown-nav{
-  padding: 10px 40px 10px 10px;
   text-decoration: none;
   color:var(--blackColor);
   font-family: var(--textFamily);
@@ -178,6 +171,12 @@ margin-top:25px;
   font-weight: 700;
   transition: 0.4s all ease;
   background: transparent;
+  display: block;
+  margin:0;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 45px;
 }
 .nav-dropdown .nav-dropdown-nav:hover{
   color:#fff;
