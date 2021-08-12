@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/omakwaenergyplc/static/css/main.2d260ed3.chunk.css",
+    "main.js": "/omakwaenergyplc/static/js/main.a3eb1ed1.chunk.js",
+    "main.js.map": "/omakwaenergyplc/static/js/main.a3eb1ed1.chunk.js.map",
+    "runtime-main.js": "/omakwaenergyplc/static/js/runtime-main.69b0d09f.js",
+    "runtime-main.js.map": "/omakwaenergyplc/static/js/runtime-main.69b0d09f.js.map",
+    "static/css/2.983f79de.chunk.css": "/omakwaenergyplc/static/css/2.983f79de.chunk.css",
+    "static/js/2.81f7f8e4.chunk.js": "/omakwaenergyplc/static/js/2.81f7f8e4.chunk.js",
+    "static/js/2.81f7f8e4.chunk.js.map": "/omakwaenergyplc/static/js/2.81f7f8e4.chunk.js.map",
+    "index.html": "/omakwaenergyplc/index.html",
+    "static/css/2.983f79de.chunk.css.map": "/omakwaenergyplc/static/css/2.983f79de.chunk.css.map",
+    "static/css/main.2d260ed3.chunk.css.map": "/omakwaenergyplc/static/css/main.2d260ed3.chunk.css.map",
+    "static/js/2.81f7f8e4.chunk.js.LICENSE.txt": "/omakwaenergyplc/static/js/2.81f7f8e4.chunk.js.LICENSE.txt",
+    "static/media/(13).84d3f8e2.jpeg": "/omakwaenergyplc/static/media/(13).84d3f8e2.jpeg",
+    "static/media/otherpages.css": "/omakwaenergyplc/static/media/image2.88a82fc5.jpeg",
+    "static/media/logo.f21833a7.svg": "/omakwaenergyplc/static/media/logo.f21833a7.svg",
+    "static/media/project2.1d460efb.jpeg": "/omakwaenergyplc/static/media/project2.1d460efb.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69b0d09f.js",
+    "static/css/2.983f79de.chunk.css",
+    "static/js/2.81f7f8e4.chunk.js",
+    "static/css/main.2d260ed3.chunk.css",
+    "static/js/main.a3eb1ed1.chunk.js"
+  ]
+}
