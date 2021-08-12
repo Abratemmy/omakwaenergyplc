@@ -1,0 +1,89 @@
+.footer-logo{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 80px;
+}
+
+.footer-logo img{
+    width: 100%;
+    height: 150px
+}
+.footer-address{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: var(--textColor);
+    padding-bottom: 0px;
+}
+.footer-address1{
+    max-width: 600px;
+    padding-left: 100px;
+}
+.footer-address2{
+    padding-left: 12px;
+}
+.footer-address2 p .fa{
+    color: var(--primaryColor);
+    padding-right: 5px;
+}
+.footer-address2 p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer-address2 p span{
+    display: block;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.footerpagelogo{
+    padding: 0px 80px;
+}
+.footerpagelogo ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footerpagelogo ul li{
+    padding:   5px 10px 20px 10px;
+    font-size: 40px;
+}
+.footerpagelogo ul li a{
+    color: rgb(75, 75, 75);
+    transition: 0.4s all ease;
+}
+.footerpagelogo ul li a:hover{
+    color: var(--primaryColor)
+}
+.footerpage2{
+    background-color: var(--blackColor);
+    color: white;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+.footerpage2 .container{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif ;
+}
+.footerpage2 .footer-link{
+    text-decoration: none;
+    color: var(--primaryColor);
+    transition: 0.4s all ease;
+}
+.footerpage2 .footer-link:hover{
+    color:green
+}
+.footerpage2 .footer-span-link{
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+.footer-span-link a{
+    color: white;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    transition: 0.4s all ease;
+    letter-spacing: 0!important;
+}
+.footer-span-link a:hover{
+    color: green;
+}

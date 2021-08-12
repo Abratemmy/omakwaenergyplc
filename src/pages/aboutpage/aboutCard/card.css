@@ -1,0 +1,65 @@
+.aboutpage-card-container{
+    padding: 20px 0px;
+}
+.aboutpage-card-container .card-title{
+    font-size: 24px;
+    font-family: var(--headingFamily);
+    color:var(--blackColor);
+    padding: 10px 0px 30px 0px;
+}
+.about-card-nav{
+    text-decoration: none;
+    transition:0.5s all ease;
+}
+
+.card-container{
+    background: var(--backgroundColor);
+    padding:30px 20px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    transition:0.5s all ease;
+    opacity: 0.7;
+    height: 330px;
+    border-bottom: 2px solid var(--mainBlue);
+}
+.card-container:hover{
+    background: #Fff;
+    z-index:999;
+    box-shadow: 5px 0px 5px 5px #888888;
+    opacity: 1;
+    border-bottom: 2px solid var(--primaryColor);
+}
+.about-card-icon{
+    text-align: center;
+    position: relative;
+    top:-25px;  
+}
+.about-icon-arrow{
+    border-radius: 50%;
+    background: rgb(243, 248, 238);
+    color: var(--primaryColor);
+    height: 50px;
+    width:50px;
+    font-size: 15px!important;  
+    padding: 10px;
+    transition: 0.5s all ease;
+}
+.card-background{
+    color:var(--blackColor)
+}
+.card-background:hover .about-icon-arrow{
+    background: var(--primaryColor);
+    border:1px solid var(--mainBlue);
+    color:#fff;
+}
+.card-container img{
+    padding-bottom:20px;
+}
+.card-container h4{
+    padding: 5px 0px 10px 0px;
+    font-family: var(--textFamily);
+    font-weight: bold;
+    color: var(--blackColor);
+    text-transform: capitalize;
+    font-size: 18px;
+}

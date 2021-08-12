@@ -1,0 +1,35 @@
+
+.main-underline{
+    justify-content: space-around;
+    position: relative;
+    top:15px;
+}
+.underline{
+    display: flex;
+}
+.underline1, .underline2{
+    border-top: 2px solid var(--primaryColor);
+    width: 5vw;
+   
+}
+.underline-slant{
+    position: relative;
+    top:-13px;
+    font-size: 16px;
+    color: var(--primaryColor);
+    left:-4px;
+    font-weight: 700;
+}
+.underline-slant2{
+    position: relative;
+    color: var(--primaryColor);
+    top:-13px;
+    font-size: 16px;
+    font-weight: 700;
+    left: -4px;
+}
+.underline2{
+    position: relative;
+    left:-8px;
+}
+

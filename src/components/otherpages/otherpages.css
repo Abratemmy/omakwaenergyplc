@@ -1,0 +1,38 @@
+.otherpages-background{
+    background-color: var(--black2Color);
+    height: 300px;
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url('../../images/image2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.otherpages-container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding-top: 160px;
+}
+.other-page-heading{
+    font-size: 40px;
+    font-family: var(--textFamily);
+    font-weight: 700;
+    padding-left: 10px;
+}
+.other-pages-span{
+    font-size: 20px;
+    padding-top: 5px;
+    color:rgb(221, 219, 219);
+}
+.other-pages-span .otherpage-navlink{
+    color:#fff!important;
+    text-decoration: none;
+    padding-right: 10px;
+    
+}
+.other-pages-span span{
+    padding-left: 10px;
+    font-size: 15px;
+}

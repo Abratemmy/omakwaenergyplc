@@ -1,0 +1,113 @@
+.about-whoweare{
+    padding: 30px 0px;
+    font-family: var(--textFamily);
+    font-size: 17px;
+    color:var(--blackColor);
+    text-align: justify;
+    line-height: 30px;
+}
+.about-whoweare h1{
+    text-align: center;
+}
+
+.about-whoweare span{
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+.about-whoweare-text{
+    padding-bottom: 20px;
+}
+
+.hr-line hr{
+    border-top: 2px solid var(--primaryColor);
+}
+.vision-mission-column{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.vision-mission-text{
+    background-color: var(--primaryColor);
+    border-left: 4px solid var(--mainBlue);
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/* css for the about-purpose */
+.aboutpurpose-container{
+    padding: 40px 0px;
+}
+.about-purpose-values{
+    padding: 10px 0px 30px 0px;
+}
+.about-purpose-text{
+    color:var(--blackColor);
+    font-family: var(--textFamily);
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 20px;
+    text-align: justify;
+}
+.about-purpose-container{
+    background: var(--backgroundColor);
+    padding: 40px 0px;
+}
+.about-purpose-title .about-purpose-text{
+    padding-top:5px;
+}
+.about-purpose-title h4{
+    font-family:var(--textFamily);
+    font-size: 22px;
+    font-weight: bold;
+}
+.about-purpose-column{
+    display: flex;
+    justify-content: left;
+    padding: 20px 0px;
+}
+.about-purpose-column img{
+    width: 30%;
+    height: 70px;
+    padding-right: 30px;
+}
+
+/* about strategy page css starts here */
+.strategy-container{
+    padding: 50px 0px;
+}
+.about-strategy-container{
+    padding: 40px 0px;
+    display: flex;
+}
+.about-strategy-icon{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 15px;
+}
+.strategy-icon{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background: var(--mainBlue);
+    border-radius: 50%;
+    padding: 20px;
+    transition: 0.4s all ease;
+}
+.about-strategy-container h4{
+    color:var(--blackColor);
+    font-family: var(--textFamily);
+    font-weight: bold;
+    font-size: 22px;
+}
+.about-strategy-text{
+    font-size: 17px;
+    color:var(--blackColor);
+    font-family: var(--textFamily);
+    line-height: 30px;
+}
+.about-strategy-container:hover .strategy-icon{
+    background: var(--primaryColor);
+    transform: rotateZ(360deg)
+}
