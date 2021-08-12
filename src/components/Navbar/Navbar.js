@@ -53,7 +53,7 @@ function Navbar() {
                             <NavLink to="/media"activeClassName="active" className="nav-links" onClick={handleClick}>Media</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/csr"activeClassName="active" className="nav-links" onClick={handleClick}>CSR</NavLink>
+                            <NavLink to="/responsibilities"activeClassName="active" className="nav-links" onClick={handleClick}>CSR</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/contact"activeClassName="active" className="nav-links" onClick={handleClick}>Contact us</NavLink>

@@ -3,13 +3,6 @@
     background:rgb(227, 236, 227);
  
 }
-body h1{
-    color:var(--textColor);
-    font-size: 35px;
-    font-family: var(--headingFamily);
-    font-weight:bold;
-    text-transform: capitalize;
-}
 .home-about-text{
     color:var(--blackColor);
     line-height: 30px;
@@ -183,4 +176,33 @@ body h1{
     padding-left: 15px;
     font-size: 20px;
     transition: 0.4s all ease;
+}
+
+/* media screen css */
+
+@media screen and (max-width: 960px){
+    .home-container-signup{
+        padding:30px 100px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .home-container-signup{
+        padding:30px 20px;
+    }
+    .home-signup{
+        border: 2px solid var(--mainBlue);
+        padding: 30px 5px;  
+        text-align: left;
+        border-radius: 10px;
+    }
+    .home-signup-title h1{
+        text-align: center;  
+    }
+    .home-signup .home-text{
+        font-size: 15px;
+    }
+    .title-underline{
+        padding-left: 34vw;
+    }
 }

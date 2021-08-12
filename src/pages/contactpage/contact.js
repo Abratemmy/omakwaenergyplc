@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {FaEnvelope, FaHome, FaPhoneAlt} from 'react-icons/fa';
 import './contact.css'
 import Underline from '../../components/textunderline/textunderline';
+import Otherpages from '../../components/otherpages/otherpages';
 
 // import {
 //     InfoWindow,
@@ -32,7 +33,7 @@ export class Contact extends Component {
         return (
             <div>
                 {/* <Otherpages title="Contact" pagetitle="contact"/> */}
-
+                <Otherpages title="Contact us" pagetitle="contact" />
                 <div className="container contact-container">
                     <div className="row no-gutters">
                         <div className="col-lg-4 col-md-12 col-sm-12 contact-details">

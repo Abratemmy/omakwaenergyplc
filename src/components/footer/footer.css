@@ -10,9 +10,9 @@
 }
 .footer-address{
     display: flex;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--textFamily);
     font-size: 17px;
-    color: var(--textColor);
+    color: var(--blackColor);
     padding-bottom: 0px;
 }
 .footer-address1{
@@ -86,4 +86,29 @@
 }
 .footer-span-link a:hover{
     color: green;
+}
+
+@media screen and (max-width: 960px){  
+    .footer-address{
+        display: block;
+        font-family: var(--textFamily);
+        font-size: 17px;
+        color: var(--blackColor);
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .footer-address1{
+        padding-left: 0px;
+        max-width:auto;
+        padding-bottom: 20px;
+    }
+    .footer-logo{
+        justify-content: center;
+        text-align: center;
+        padding: 0px;
+    }
+    .footer-logo img{
+        width: 70%;
+        height: 100px
+    }
 }

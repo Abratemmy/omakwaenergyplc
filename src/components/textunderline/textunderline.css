@@ -9,8 +9,7 @@
 }
 .underline1, .underline2{
     border-top: 2px solid var(--primaryColor);
-    width: 5vw;
-   
+    width: 5vw;  
 }
 .underline-slant{
     position: relative;
@@ -32,4 +31,15 @@
     position: relative;
     left:-8px;
 }
-
+@media screen and (max-width: 960px){
+    .underline1, .underline2{
+        border-top: 2px solid var(--primaryColor);
+        width: 8vw;  
+    }
+}
+@media screen and (max-width: 760px){
+    .underline1, .underline2{
+        border-top: 2px solid var(--primaryColor);
+        width: 12vw;  
+    }
+}

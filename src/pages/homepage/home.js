@@ -64,7 +64,7 @@ export class Home extends Component {
                                 that executed this project, the building proves that Nigeria’s energy future has large off-grid potentials.
                                 </div>
 
-                                <div className="button-navlink" style={{paddingTop:'15px'}}>
+                                <div className="button-navlink" style={{paddingTop:'15px', paddingBottom:'20px'}}>
                                     <NavLink to='/projects' target="_blank" className="nav">See More Projects</NavLink>
                                 </div>
 

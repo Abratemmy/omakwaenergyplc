@@ -10,23 +10,24 @@ function Footer() {
     return (
         <div className="footer-page">
             <div className="footerpage1">
-                <div className="footer-logo">
-                    <img src={logo} alt="footer-logo" />
-                </div>
-                <div className="container footer-address">
-                    <div className="footer-address1">Omakwa Energy is located at No 10 Wiche Lane, 1 off Uniport Road Ndudor, Choba, Port Harcourt.Rivers State Nigeria.</div>
-                    <div className="footer-address2">
-                        <p><i className="fa fa-phone" /> Phone 
-                        <span>+234 708 887 9779</span>
-                        </p>
-                        
-                        <p><i className="fa fa-envelope" /> Email
-                            <span className="">info@omakwaenergy.com <br />
-                        ceo@omakwaenergy.com</span>
-                        </p>            
+                <div className="page-container">
+                    <div className="footer-logo">
+                        <img src={logo} alt="footer-logo" />
+                    </div>
+                    <div className="container footer-address">
+                        <div className="footer-address1">Omakwa Energy is located at No 10 Wiche Lane, 1 off Uniport Road Ndudor, Choba, Port Harcourt.Rivers State Nigeria.</div>
+                        <div className="footer-address2">
+                            <p><i className="fa fa-phone" /> Phone 
+                            <span>+234 708 887 9779</span>
+                            </p>
+                            
+                            <p><i className="fa fa-envelope" /> Email
+                                <span className="">info@omakwaenergy.com <br />
+                            ceo@omakwaenergy.com</span>
+                            </p>            
+                        </div>
                     </div>
                 </div>
-
                 <div className="footerpagelogo">
                     <ul>
                         <li><a href="https://facebook.com" target="_blank"  rel="noopener noreferrer"><FaFacebookSquare /></a> </li>

@@ -5,6 +5,7 @@ import Partners from '../../pages/aboutpage/partners';
 import Purposes from '../../pages/aboutpage/purposes';
 import Strategy from '../../pages/aboutpage/strategy';
 import Contact from '../../pages/contactpage/contact';
+import Responsibility from '../../pages/CSR/responsibility';
 import Home from '../../pages/homepage/home';
 
 const Router = ()=>(
@@ -15,6 +16,7 @@ const Router = ()=>(
             <Route exact path='/about/strategy' component={Strategy} />
             <Route exact path="/about/our_customer_partner" component={Partners} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path="/responsibilities" component={Responsibility} />
         {/* <Route exact path='/contact_us' component = {Contact} /> */}
     </Switch>
 )
