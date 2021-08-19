@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Otherpages from '../../components/otherpages/otherpages';
 import Underline from '../../components/textunderline/textunderline';
-import ceo from '../../images/(13).jpeg';
 import './about.css';
 import Card from './aboutCard/card';
 export class About extends Component {

@@ -6,7 +6,9 @@ import Purposes from '../../pages/aboutpage/purposes';
 import Strategy from '../../pages/aboutpage/strategy';
 import Contact from '../../pages/contactpage/contact';
 import Responsibility from '../../pages/CSR/responsibility';
+import Error from '../../pages/error';
 import Home from '../../pages/homepage/home';
+import Media from '../../pages/Media/Media';
 
 const Router = ()=>(
     <Switch>
@@ -17,7 +19,9 @@ const Router = ()=>(
             <Route exact path="/about/our_customer_partner" component={Partners} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path="/responsibilities" component={Responsibility} />
-        {/* <Route exact path='/contact_us' component = {Contact} /> */}
+        <Route exact path='/media' component={Media} />
+        <Route  component={Error} />
+        
     </Switch>
 )
 export default Router
