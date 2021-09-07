@@ -10,7 +10,7 @@ import logo3 from '../../images/logo3.png';
 import logo4 from '../../images/logo4.png';
 import {BsArrowRight} from 'react-icons/bs';
 import WOW from 'wowjs';
-import Slider1 from '../../components/slider/slider.js';
+import Slider1 from '../../components/slider/slider1.js';
 
 export class Home extends Component {
     componentDidMount(){

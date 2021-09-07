@@ -6,9 +6,10 @@ import Purposes from '../../pages/aboutpage/purposes';
 import Strategy from '../../pages/aboutpage/strategy';
 import Contact from '../../pages/contactpage/contact';
 import Responsibility from '../../pages/CSR/responsibility';
-import Error from '../../pages/error';
 import Home from '../../pages/homepage/home';
 import Media from '../../pages/Media/Media';
+import Pagenotfound from '../error/error';
+
 
 const Router = ()=>(
     <Switch>
@@ -20,7 +21,7 @@ const Router = ()=>(
         <Route exact path='/contact' component={Contact} />
         <Route exact path="/responsibilities" component={Responsibility} />
         <Route exact path='/media' component={Media} />
-        <Route  component={Error} />
+        <Route component={Pagenotfound}/>
         
     </Switch>
 )

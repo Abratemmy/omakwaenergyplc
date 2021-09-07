@@ -3,7 +3,7 @@ import Otherpages from '../../components/otherpages/otherpages';
 import Underline from '../../components/textunderline/textunderline';
 import './media.css';
 import data from '../../pages/Media/mediadata.js';
-import Modal from './modal';
+// import Modal from './modal';
 import Slider from 'react-slick'
 
 function Media() {
@@ -13,7 +13,6 @@ function Media() {
     }
     const settings = {
         className: "center",
-        // centerMode: true,
         infinite: 0,
         centerPadding: "90px",
         slidesToShow: 3,
@@ -22,12 +21,12 @@ function Media() {
         rows: 2,
         dots:true,
         slidesPerRow: 1,
-        className:"media-slide"
+        className:"media-slide",
       };
 
     const [openmodal, setOpenModal] = useState(false);
     return (
-        <div className="media">
+        <div className="">
             <Otherpages title="Gallery" pagetitle="Our media" />
 
             <div className="page-container">

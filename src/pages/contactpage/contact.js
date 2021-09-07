@@ -1,35 +1,72 @@
 import React, { Component } from 'react';
-// import Otherpages from '../../components/otherpages/otherpages';
 import {FaEnvelope, FaHome, FaPhoneAlt} from 'react-icons/fa';
 import './contact.css'
 import Underline from '../../components/textunderline/textunderline';
 import Otherpages from '../../components/otherpages/otherpages';
+import emailjs from 'emailjs-com';
+import {
+    InfoWindow,
+    withScriptjs,
+    withGoogleMap,
+    GoogleMap,
+    Marker,
+  } from "react-google-maps"; 
+import Geocode, { setApiKey } from "react-geocode";
 
-// import {
-//     InfoWindow,
-//     withScriptjs,
-//     withGoogleMap,
-//     GoogleMap,
-//     Marker,
-//   } from "react-google-maps"; 
+Geocode.setApiKey("AIzaSyBdFqHjM1GgJ-F0RoDaB5WS8EWhKAP37kU")
+
+function sendEmail(e){
+    e.preventDefault();
+    emailjs.sendForm(
+        'service_iuv3umm',
+        'template_jl8r50m',
+        e.target,
+        "user_J0GFEOTNEUpdJde9zQve9"
+    ).then(res=>{
+        console.log(res)
+    }).catch(err=>console.log(err))
+}
 
 export class Contact extends Component {
+    state={
+        addrss:"",
+        zoom:"15",
+        mapPosition:{
+            lat:0,
+            lng:0,
+        },
+        markerPosition:{
+            lat:0,
+            lng:0,
+        }
+    }
+
+    onMarkerDragEnd = (event) =>{
+        let newLat = event.latlng.lat();
+        let newlng = event.latlng.lng();
+
+        Geocode.fromLatLng(newLat, newlng)
+        .then(response => {
+            console.log('response', response)
+        })
+    }
     render() {
-        // const MapWithAMarker = withScriptjs(withGoogleMap(props =>
-        //     <GoogleMap
-        //       defaultZoom={15}
-        //       defaultCenter={{ lat: 6.451549, lng: 3.429530 }}
-        //     >
-        //       <Marker
-        //       draggable = {true}
-        //       onDragEnd = {this.onMarkerDragEnd}
-        //         position={{ lat: 6.451549, lng: 3.429530 }}>
-        //           <InfoWindow>
-        //               <div>Omakwa energy</div>
-        //           </InfoWindow>
-        //       </Marker>
-        //     </GoogleMap>
-        //   ));
+      
+        const MapWithAMarker = withScriptjs(withGoogleMap(props =>
+            <GoogleMap
+              defaultZoom={10}
+              defaultCenter={{ lat: 6.451549, lng: 3.429530 }}
+            >
+              <Marker
+                draggable = {true}
+                onDragEnd = {this.onMarkerDragEnd}
+                    position={{ lat: 6.451549, lng: 3.429530 }}>
+                  <InfoWindow>
+                      <div>Omakwa energy Location</div>
+                  </InfoWindow>
+              </Marker>
+            </GoogleMap>
+          ));
         return (
             <div>
                 {/* <Otherpages title="Contact" pagetitle="contact"/> */}
@@ -71,25 +108,22 @@ export class Contact extends Component {
                             <div className="contact-form">
                                 <h2 className="text-left">Send a message</h2>
                                 <Underline />
-                                <form className="contactform">
+                                <form className="contactform" onSubmit={sendEmail}>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 contact-form-div">
                                             <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"  className="inputfield"/>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12  contact-form-div">
-                                            <input type="text" rules="required|max:255" name="firstname"placeholder="Last Name"  className="inputfield"/>
+                                            <input type="text" rules="required|max:255" name="lastname"placeholder="Last Name"  className="inputfield"/>
                                         </div>
-                                        <div className="col-lg-6 col-md-6 col-sm-12  contact-form-div">
-                                            <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"  className="inputfield"/>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6 col-sm-12  contact-form-div">
-                                            <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"  className="inputfield"/>
+                                        <div className="col-lg-12 col-md-12 col-sm-12  contact-form-div">
+                                            <input type="email" rules="required|max:255" name="email"placeholder="Email"  className="inputfield"/>
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12">
                                             <textarea name="message" id="" cols="30" rows="5" placeholder="Message" className="textarea"rules="required|max:255"></textarea>
                                         </div>
                                         <div className="col-lg-4 contact-submit-btn">
-                                            <button type="submit" className="signUpButton" style={{marginTop:'30px', border:'none'}}>Submit</button>
+                                            <button type="submit" className="signUpButton"value="send" style={{marginTop:'30px', border:'none'}}>Submit</button>
                                         </div>
                                         
                                     </div>
@@ -100,12 +134,12 @@ export class Contact extends Component {
                 </div>
 
                 <div className="">
-                {/* <MapWithAMarker className="google-map"
-                                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuPY5Eac8hd7cvOSWYY924Y-j29a14cig&v=3.exp&libraries=geometry,drawing,places"
-                                loadingElement={<div style={{ height: `100%` }} />}
-                                containerElement={<div style={{ height: `500px` }} />}
-                                mapElement={<div style={{ height: `100%` }} />}
-                            /> */}
+                    <MapWithAMarker className="google-map"
+                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdFqHjM1GgJ-F0RoDaB5WS8EWhKAP37kU&v=3.exp&libraries=geometry,drawing,places"
+                        loadingElement={<div style={{ height: `100%` }} />}
+                        containerElement={<div style={{ height: `500px` }} />}
+                        mapElement={<div style={{ height: `100%` }} />}
+                    />
                 </div>
             </div>
         )

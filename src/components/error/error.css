@@ -1,0 +1,28 @@
+/* error css */
+.errorpage{
+    background: linear-gradient(180deg, rgba(91, 92, 91, 0.443), rgba(36, 82, 10, 0.443)) ,url('../../images/image1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+.errorpage h1{
+    text-align: center;
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+.errornav{
+    color: var(--mainBlue);
+    text-decoration: none;
+    transition:0.4s all ease
+}
+.errornav:hover{
+    color: var(--blackColor);
+    text-decoration: none;
+}

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import {FiAlignRight,FiXCircle} from "react-icons/fi";
+import {RiArrowRightSLine } from "react-icons/ri";
 import './Navbar.css';
 import logo from '../../images/logo.svg';
 
@@ -10,6 +11,10 @@ function Navbar() {
     const handleClick = () =>setClick(!click);
 
     const [navbar, setNavbar] = useState(false);
+
+    // code for hamburger dropdow when it is on small device
+    const[arrow, showarrow] = useState(false);
+    const handleArrow = () =>showarrow(!arrow);
 
     
     const changeBackground= ()=>{
@@ -37,18 +42,30 @@ function Navbar() {
 
                         <span className="dropdown-span">
                             <li className="nav-item nav-item-dropdown">
-                                <NavLink to="/about"activeClassName="active" className="nav-links " onClick={handleClick}>About us</NavLink>
-                           
-                            <div className="nav-dropdown">
-                                <NavLink to="/about/purpose_values" className="nav-dropdown-nav">Our purpose</NavLink>
-                                <NavLink to="/about/strategy" className="nav-dropdown-nav">Our strategy</NavLink>
-                                <NavLink to="/about/our_customer_partner" className="nav-dropdown-nav">Customers & Partners</NavLink>
-                                <NavLink to="/testimony" className="nav-dropdown-nav">testimony</NavLink>
-                            </div>                    
-                            </li> </span>
-                        <li className="nav-item">
-                            <NavLink to="/services" activeClassName="active" className="nav-links" onClick={handleClick}>Service</NavLink>
-                        </li>
+                                <div className="drop-palava">
+                                    <a href="#"activeClassName="active" className="nav-links " onClick={handleArrow}>About us </a> 
+                                    <span className="span-arrow"><RiArrowRightSLine className="droparrow" /></span>
+                                </div>    
+                                <div className="nav-dropdown">
+                                    <NavLink to="/about" className="nav-dropdown-nav">Omakwa at a Glance</NavLink>
+                                    <NavLink to="/about/purpose_values" className="nav-dropdown-nav">Our purpose</NavLink>
+                                    <NavLink to="/about/strategy" className="nav-dropdown-nav">Our strategy</NavLink>
+                                    <NavLink to="/about/our_customer_partner" className="nav-dropdown-nav">Customers & Partners</NavLink>
+                                    <NavLink to="/testimony" className="nav-dropdown-nav">testimony</NavLink>
+                                </div>                    
+                            </li> 
+                        </span>
+                        <span className="dropdown-span">
+                            <li className="nav-item nav-item-dropdown">
+                                <a href="#" activeClassName="active" className="nav-links" onClick={handleClick}>Service</a>
+                                <div className="nav-dropdown">
+                                    <NavLink to="/oil_and_gas_operation" className="nav-dropdown-nav">Oil & Gas Operation</NavLink>
+                                    <NavLink to="/Environmetal_projects" className="nav-dropdown-nav">Environmental projects</NavLink>
+                                    <NavLink to="/building_and_civil_works" className="nav-dropdown-nav">Building & Civil Works</NavLink>
+                                    <NavLink to="/Dredginh_and_marine_services" className="nav-dropdown-nav">Dredging & Marine Services</NavLink>
+                                </div>
+                            </li>
+                        </span>
                         <li className="nav-item">
                             <NavLink to="/media"activeClassName="active" className="nav-links" onClick={handleClick}>Media</NavLink>
                         </li>

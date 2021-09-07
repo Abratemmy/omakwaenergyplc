@@ -8,7 +8,7 @@ function Modal({closeModal}) {
             <div className="modal-container">
                 <button onClick={()=>closeModal(false)}>X</button>
                 <div className="title">
-                    See big pictures
+                    {data.map}
                 </div>
             </div>
             
