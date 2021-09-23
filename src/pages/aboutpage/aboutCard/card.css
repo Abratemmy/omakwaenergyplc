@@ -63,3 +63,6 @@
     text-transform: capitalize;
     font-size: 18px;
 }
+.card-container p{
+    font-size: 15px;
+}

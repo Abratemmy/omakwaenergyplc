@@ -3,7 +3,7 @@ import {FaEnvelope, FaHome, FaPhoneAlt} from 'react-icons/fa';
 import './contact.css'
 import Underline from '../../components/textunderline/textunderline';
 import Otherpages from '../../components/otherpages/otherpages';
-import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com/';
 import {
     InfoWindow,
     withScriptjs,
@@ -14,18 +14,6 @@ import {
 import Geocode, { setApiKey } from "react-geocode";
 
 Geocode.setApiKey("AIzaSyBdFqHjM1GgJ-F0RoDaB5WS8EWhKAP37kU")
-
-function sendEmail(e){
-    e.preventDefault();
-    emailjs.sendForm(
-        'service_iuv3umm',
-        'template_jl8r50m',
-        e.target,
-        "user_J0GFEOTNEUpdJde9zQve9"
-    ).then(res=>{
-        console.log(res)
-    }).catch(err=>console.log(err))
-}
 
 export class Contact extends Component {
     state={
@@ -50,6 +38,20 @@ export class Contact extends Component {
             console.log('response', response)
         })
     }
+
+    sendEmail(e){
+        e.preventDefault();
+        emailjs.sendForm(
+            'service_iuv3umm',
+            'template_jl8r50m',
+            e.target,
+            "user_J0GFEOTNEUpdJde9zQve9"
+        ).then(res=>{
+            console.log(res)
+
+        }).catch(err=>console.log(err))
+    }
+    
     render() {
       
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
@@ -108,7 +110,7 @@ export class Contact extends Component {
                             <div className="contact-form">
                                 <h2 className="text-left">Send a message</h2>
                                 <Underline />
-                                <form className="contactform" onSubmit={sendEmail}>
+                                <form className="contactform" onSubmit={this.sendEmail}>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 contact-form-div">
                                             <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"  className="inputfield"/>

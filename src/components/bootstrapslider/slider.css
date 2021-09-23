@@ -1,0 +1,71 @@
+.bootstrapcarousel{
+    height: 400px;
+}
+.carousel-item img{
+    height:400px;
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.slider-arrow{
+    font-size: 30px;
+    color:#fff;
+    font-weight:700;
+    background: var(--primaryColor)
+}
+.carousel-caption{
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-caption .section1{
+  margin-top: 70px;
+  margin-left: 17vw;
+  max-width: 470px;
+  padding: 20px 10px;
+  background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443));
+  font-weight:500;
+  font-family: var(--textFamily);
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height:30px;
+  text-align:left;
+}
+.carousel-caption .section2{
+    text-align: left;
+    max-width: 600px;
+    font-family:var(--textFamily);
+    margin-top: 70px;
+    font-size: 18px;
+    line-height:30px;
+    /* font-size: 20px; */
+    padding:30px 10px;
+    background:linear-gradient(180deg, rgba(6, 29, 155, 0.443), rgba(5, 25, 117, 0.443));
+}
+.carousel-caption button{
+    margin-top:70px;
+    border: 0;
+}
+.carousel-caption .button-nav{
+    text-decoration: none;
+    background: linear-gradient(180deg, rgba(6, 29, 155, 0.443), rgba(5, 25, 117, 0.443)), var(--mainBlue);
+    padding: 15px 35px;
+    color:#fff;
+    font-size: 17px;
+    font-family:var(--textFamily);
+    transition: 0.4s all ease;
+    border-radius: 5px;
+}
+.carousel-caption .button-nav:hover{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), var(--primaryColor);
+    color:#fff;
+}
+@media screen and (max-width: 850px){
+    .bootstrapcarousel{
+        height: 250px;
+    }
+    .carousel-item img{
+        height:250px;
+       
+    }
+}

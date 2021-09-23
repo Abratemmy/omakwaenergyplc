@@ -10,7 +10,8 @@ import logo3 from '../../images/logo3.png';
 import logo4 from '../../images/logo4.png';
 import {BsArrowRight} from 'react-icons/bs';
 import WOW from 'wowjs';
-import Slider1 from '../../components/slider/slider1.js';
+// import Slider1 from '../../components/slider/slider1.js';
+import Slider from '../../components/bootstrapslider/slider';
 
 export class Home extends Component {
     componentDidMount(){
@@ -19,7 +20,7 @@ export class Home extends Component {
     render() {
         return (
             <div className="">
-                <Slider1 />
+                <Slider />
                 <div className="homepage-container">
                     <div className="homepage">
                         <div className="page-container">
@@ -104,33 +105,41 @@ export class Home extends Component {
                                     <div className="row gx-1 home-service-row">
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column wow fadeInDown" data-wow-delay=".3s">
                                             <div className="home-service-grid-style home-service-grid-style1">
-                                                <div className="img"><img src={logo1} alt="grid-logo"/></div>
-                                                <h4>OIL AND GAS OPERATIONS</h4>
+                                                <NavLink to="/oil_and_gas_operation" className="home-service-nav">
+                                                    <div className="img"><img src={logo1} alt="grid-logo"/></div>
+                                                    <h4>OIL AND GAS OPERATIONS</h4>
+                                                </NavLink>
                                             </div>
                                         </div>
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column home-service-column2 wow fadeInDown"  data-wow-delay=".5s">
                                             <div className="home-service-grid-style home-service-grid-style2">
-                                                <div className="img"><img src={logo2} alt="grid-logo"/></div>
-                                                <h4>BUILDING CIVIL WORKS</h4>
+                                                <NavLink to="/building_and_civil_works" className="home-service-nav">
+                                                    <div className="img"><img src={logo2} alt="grid-logo"/></div>
+                                                    <h4>BUILDING CIVIL WORKS</h4>
+                                                </NavLink>
                                             </div>
                                         </div>
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column home-service-column3 wow fadeInDown"  data-wow-delay=".7s">
                                             <div className="home-service-grid-style home-service-grid-style3">
-                                            <div className="img"><img src={logo3} alt="grid-logo"/></div>
-                                                <h4>DREDGING, SAND BLASTING/WINNING</h4>
+                                                <NavLink to="/dredging_and_marine_services" className="home-service-nav">
+                                                    <div className="img"><img src={logo3} alt="grid-logo"/></div>
+                                                    <h4>DREDGING, SAND BLASTING/WINNING</h4>
+                                                </NavLink>
                                             </div>
                                         </div>
                                         <div className="col-lg-3 col-md-6 col-sm-6  home-service-column home-service-column4 wow fadeInDown"  data-wow-delay=".9s">
                                             <div className="home-service-grid-style home-service-grid-style4">
-                                            <div className="img"><img src={logo4} alt="grid-logo"/></div>
-                                                <h4>ENVIRONMENTAL PROJECTS</h4>
+                                                <NavLink to="/environmetal_projects" className="home-service-nav">
+                                                    <div className="img"><img src={logo4} alt="grid-logo"/></div>
+                                                    <h4>ENVIRONMENTAL PROJECTS</h4>
+                                                </NavLink>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="button-navlink" style={{paddingTop:'15px'}}>
+                                    {/* <div className="button-navlink" style={{paddingTop:'15px'}}>
                                         <NavLink to='/services' target="_blank" className="nav">View More</NavLink>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                             </div>

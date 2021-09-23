@@ -96,6 +96,9 @@
     opacity:1;
     position:relative;
 }
+.home-service-nav{
+    text-decoration: none;
+}
 .home-service-grid-style:hover{
     opacity: 0.5;
     transform: scaleY(1.1);

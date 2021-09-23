@@ -60,9 +60,9 @@ function Navbar() {
                                 <a href="#" activeClassName="active" className="nav-links" onClick={handleClick}>Service</a>
                                 <div className="nav-dropdown">
                                     <NavLink to="/oil_and_gas_operation" className="nav-dropdown-nav">Oil & Gas Operation</NavLink>
-                                    <NavLink to="/Environmetal_projects" className="nav-dropdown-nav">Environmental projects</NavLink>
+                                    <NavLink to="/environmetal_projects" className="nav-dropdown-nav">Environmental projects</NavLink>
                                     <NavLink to="/building_and_civil_works" className="nav-dropdown-nav">Building & Civil Works</NavLink>
-                                    <NavLink to="/Dredginh_and_marine_services" className="nav-dropdown-nav">Dredging & Marine Services</NavLink>
+                                    <NavLink to="/dredging_and_marine_services" className="nav-dropdown-nav">Dredging & Marine Services</NavLink>
                                 </div>
                             </li>
                         </span>
