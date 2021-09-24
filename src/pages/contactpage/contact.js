@@ -15,7 +15,58 @@ import Geocode, { setApiKey } from "react-geocode";
 
 Geocode.setApiKey("AIzaSyBdFqHjM1GgJ-F0RoDaB5WS8EWhKAP37kU")
 
+
+const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 export class Contact extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             firstname:"",
+             lastname:"",
+             email:"",
+             message:"",
+             errors:{
+                 email:'',
+                 message:''
+             }
+        };
+        this.handleSubmit=this.handleSubmit.bind(this)
+    }
+    firsthandler=(event) =>{
+        this.setState({
+            firstname:event.target.value
+        })
+    }
+    secondhandler=(event) =>{
+        this.setState({
+            lastname:event.target.value
+        })
+    }
+    emailhandler=(event) =>{
+        const { name, value } = event.target;
+        let errors = this.state.errors;
+        switch (name) {
+            case 'email': 
+              errors.email = 
+                validEmailRegex.test(value)
+                  ? ''
+                  : 'Email is not valid!';
+              break;
+            default:
+              break;
+          }
+        this.setState({
+            email:event.target.value,
+            errors
+        })
+    }
+    messagehandler=(event) =>{
+        this.setState({
+            message:event.target.value
+        })
+    }
+    
     state={
         addrss:"",
         zoom:"15",
@@ -38,9 +89,23 @@ export class Contact extends Component {
             console.log('response', response)
         })
     }
-
+    handleSubmit=(e) =>{
+        if(this.emailhandler===true){
+            alert(`hi ${this.state.firstname} ${this.state.lastname}, Thank you for contacting us, we will get back to you`)
+            this.setState({
+                firstname:"",
+                lastname:"",
+                email:"",
+                message:""
+            })
+            e.preventDefault();        
+        }
+        else{
+            alert("Your email is required !!!")
+        }
+        this.sendEmail(e);
+    }
     sendEmail(e){
-        e.preventDefault();
         emailjs.sendForm(
             'service_iuv3umm',
             'template_jl8r50m',
@@ -110,22 +175,24 @@ export class Contact extends Component {
                             <div className="contact-form">
                                 <h2 className="text-left">Send a message</h2>
                                 <Underline />
-                                <form className="contactform" onSubmit={this.sendEmail}>
+                                <form className="contactform" onSubmit={this.handleSubmit}>
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-sm-12 contact-form-div">
-                                            <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"  className="inputfield"/>
+                                            <input type="text" rules="required|max:255" name="firstname"placeholder="First Name"value={this.state.firstname} onChange={this.firsthandler}  className="inputfield"/>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12  contact-form-div">
-                                            <input type="text" rules="required|max:255" name="lastname"placeholder="Last Name"  className="inputfield"/>
+                                            <input type="text" rules="required|max:255" name="lastname"placeholder="Last Name" value={this.state.lastname} onChange={this.secondhandler} className="inputfield"/>
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12  contact-form-div">
-                                            <input type="email" rules="required|max:255" name="email"placeholder="Email"  className="inputfield"/>
+                                            <input type="email" rules="required|max:255" name="email"placeholder="Email"value={this.state.email} onChange={this.emailhandler}  className="inputfield"noValidate/>
+                                            {this.state.errors.email.length > 0 && 
+                                             <span className='error'style={{color:"red"}}>{this.state.errors.email}</span>}
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12">
-                                            <textarea name="message" id="" cols="30" rows="5" placeholder="Message" className="textarea"rules="required|max:255"></textarea>
+                                            <textarea name="message" id="" cols="30" rows="5" placeholder="Message" className="textarea"rules="required|max:255" value={this.state.message} onChange={this.messagehandler}></textarea>
                                         </div>
                                         <div className="col-lg-4 contact-submit-btn">
-                                            <button type="submit" className="signUpButton"value="send" style={{marginTop:'30px', border:'none'}}>Submit</button>
+                                            <button type="submit" className="signUpButton"value="Submit" style={{marginTop:'30px', border:'none'}}>Submit</button>
                                         </div>
                                         
                                     </div>
