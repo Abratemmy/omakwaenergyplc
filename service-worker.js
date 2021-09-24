@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/omakwaenergyplc/precache-manifest.c57f48618623d64732b8a719370855d4.js"
+  "/omakwaenergyplc/precache-manifest.eec7e5a6b35a1a6ffc67b4cc46895e9b.js"
 );
 
 workbox.clientsClaim();
