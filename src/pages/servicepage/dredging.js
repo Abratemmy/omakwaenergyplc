@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import Otherservices from './otherservices';
-import image1 from "../../images/(2).jpeg";
-import image2 from "../../images/(4).jpeg";
-import image3 from "../../images/(6).jpeg";
+import Otherpages from '../../components/otherpages/otherpages';
 
 export class Dredging extends Component {
     render() {
         return (
             <div className="servicescontainer">
+                <Otherpages title="Dredging and Marine Service" pagetitle="service" />
             <div className="page-container">
                 <div className="services-text">
                     <span>At Omakwa Energy, </span> we excavate materials from a water environment. This is because we are improving
@@ -22,14 +21,14 @@ export class Dredging extends Component {
             <div className="service-other"> 
                 <Otherservices 
                     title1="ENVIRONMENTAL PROJECTS"
-                    img1={image2}
+                    img1="https://res.cloudinary.com/hayteetech/image/upload/v1640532890/Omakwaenergy/4_xq9bae.jpg"
                     url1="environmetal_projects"
 
                     title2="BUILDING AND CIVIL WORKS"
-                    img2={image2}
+                    img2="https://res.cloudinary.com/hayteetech/image/upload/v1640533185/Omakwaenergy/6_ano3hk.jpg"
                     url2="building_and_civil_works"
 
-                    title3 ="OIL AND GAS OPERATIONS" img3={image1}
+                    title3 ="OIL AND GAS OPERATIONS" img3="https://res.cloudinary.com/hayteetech/image/upload/v1640532889/Omakwaenergy/2_q1ybzd.jpg"
                     url3="oil_and_gas_operation"
 
                                

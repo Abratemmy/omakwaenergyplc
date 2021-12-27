@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Otherpages from '../../components/otherpages/otherpages';
 import Underline from '../../components/textunderline/textunderline';
 import './csr.css';
-import image1 from '../../images/image3.jpeg';
 
 
 export class Responsibility extends Component {
@@ -30,7 +29,7 @@ export class Responsibility extends Component {
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="csr-img">
-                                    <img src={image1} alt="loading"  />
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640530974/Omakwaenergy/image3_llnotq.jpg" alt="loading"  />
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-8 col-sm-12">

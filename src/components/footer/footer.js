@@ -1,6 +1,5 @@
 import React from 'react';
 import './footer.css';
-import logo from '../../images/logo.svg';
 import { Link} from 'react-router-dom';
 import {FaFacebookSquare, FaTwitterSquare} from 'react-icons/fa';
 import {IoLogoLinkedin} from 'react-icons/io'
@@ -12,7 +11,7 @@ function Footer() {
             <div className="footerpage1">
                 <div className="page-container">
                     <div className="footer-logo">
-                        <img src={logo} alt="footer-logo" />
+                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531387/Omakwaenergy/logo_dk7xih.svg" alt="footer-logo" />
                     </div>
                     <div className="container footer-address">
                         <div className="footer-address1">Omakwa Energy is located at No 10 Wiche Lane, 1 off Uniport Road Ndudor, Choba, Port Harcourt.Rivers State Nigeria.</div>
@@ -42,8 +41,8 @@ function Footer() {
                     Copyright © 2020 All Rights Reserved <span className=""><Link to='/' className="footer-link">Omakwa Energy Limited.</Link> </span>
                     <span className="footer-span-link">
                         ||
-                        <a href="omakwa.com/webmail" target="_blank"  rel="noopener noreferrer">Webmail </a> ||
-                        <Link to='/privacy-policy' exact>Privacy Policy </Link>  || 
+                        {/* <a href="omakwa.com/webmail" target="_blank"  rel="noopener noreferrer">Webmail </a> ||
+                        <Link to='/privacy-policy' exact>Privacy Policy </Link>  ||  */}
                         <a href="https://abratemmy.github.io/myportfolio" target="_blank"  rel="noopener noreferrer" > WebMaster  </a>
                     </span>
                 </div>

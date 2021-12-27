@@ -5,11 +5,13 @@
 :root{
     --blackColor: #404552;
     --black2Color:#8a8a8a;
-    --primaryColor: rgb(49, 179, 49);
+    --primaryColor: #31b331;
     --mainBlue:#001659;
     --textFamily:'Lato', sans-serif;
     --headingFamily: 'Oswald', sans-serif;
     --backgroundColor: rgb(227, 236, 227);
+    --green: #20ca20;
+  
 }
 .page-container{
     padding: 0px 90px;

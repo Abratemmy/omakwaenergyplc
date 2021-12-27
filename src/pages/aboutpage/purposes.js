@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import Otherpages from '../../components/otherpages/otherpages'
 import Underline from '../../components/textunderline/textunderline';
-import logo1 from '../../images/logo1.png';
-import logo2 from '../../images/logo2.png';
-import logo3 from '../../images/logo3.png';
-import logo4 from '../../images/logo4.png';
 import Card from './aboutCard/card';
 
 export class Purposes extends Component {
@@ -44,7 +40,7 @@ export class Purposes extends Component {
                             </div>
                             <div className="col-lg-7 colmd-12 col-sm-12">
                                 <div className="about-purpose-column">
-                                    <img src={logo1} alt="logo" className="img"/>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo1_ltfwpm.png" alt="logo" className="img"/>
 
                                     <div className="about-purpose-title">
                                         <h4 className="wow slideInRight" data-wow-duration="1.5s">Environment</h4>
@@ -61,7 +57,7 @@ export class Purposes extends Component {
                                 </div>
 
                                 <div className="about-purpose-column">
-                                    <img src={logo2} alt="logo" className="img"/>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo2_ujtbzl.png" alt="logo" className="img"/>
 
                                     <div className="about-purpose-title">
                                         <h4 className="wow slideInRight" data-wow-duration="1.5s">Health</h4>
@@ -78,7 +74,7 @@ export class Purposes extends Component {
                                 </div>
 
                                 <div className="about-purpose-column">
-                                    <img src={logo3} alt="logo" className="img"/>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo3_wyyobo.png" alt="logo" className="img"/>
 
                                     <div className="about-purpose-title">
                                         <h4 className="slideInRight" data-wow-duration="1.5s">Safety</h4>
@@ -94,7 +90,7 @@ export class Purposes extends Component {
                                 </div>
 
                                 <div className="about-purpose-column">
-                                    <img src={logo4} alt="logo" className="img"/>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531487/Omakwaenergy/logo4_ohksyp.png" alt="logo" className="img"/>
 
                                     <div className="about-purpose-title">
                                         <h4 className="slideInRight" data-wow-duration="1.5s">Security</h4>

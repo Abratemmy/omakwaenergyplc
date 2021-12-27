@@ -2,7 +2,7 @@
   "name": "omakwaenergyplc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abratemmy.github.io/omakwaenergyplc",
+  "homepage": "https://omakwaenergy.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -16,6 +16,7 @@
     "react-google-autocomplete": "^2.4.2",
     "react-google-maps": "^9.4.5",
     "react-icons": "^4.2.0",
+    "react-paginate": "^8.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8",
     "react-slick": "^0.28.1",

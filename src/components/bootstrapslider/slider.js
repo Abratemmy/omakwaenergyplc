@@ -1,8 +1,5 @@
 import React from 'react';
 import './slider.css';
-import firstslide from '../../images/image1.jpeg';
-import secondslide from '../../images/image2.jpeg';
-import thirdslide from '../../images/image3.jpeg';
 import { RiArrowLeftSLine,  RiArrowRightSLine} from "react-icons/ri";
 import {NavLink} from "react-router-dom";
 function Slider() {
@@ -16,7 +13,7 @@ function Slider() {
                 </div> */}
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={firstslide} className="d-block w-100" alt="..." />
+                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640530974/Omakwaenergy/image1_gkjzis.jpg" className="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <p className="section1 animated bounceInDown" style={{animationDelay:".4s"}}>
                                 Your home of renewable energy resources.  We have a vision and the passion to drive an increase in Nigeria’s energy capacity and access
@@ -24,15 +21,15 @@ function Slider() {
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={secondslide} className="d-block w-100 " alt="..." />
+                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640530975/Omakwaenergy/image2_n5mfnp.jpg" className="d-block w-100 " alt="..." style={{opacity:"0.8"}}/>
                         <div class="carousel-caption d-none d-md-block">
-                            <p className="section2 animated slideInLeft" style={{animationDelay:".1s"}}>We uphold and promote the company’s core values of Integrity, Accountability, Reliability and Relationship</p>  
+                            <p className="section1 animated slideInLeft" style={{animationDelay:".1s"}}>We uphold and promote the company’s core values of Integrity, Accountability, Reliability and Relationship</p>  
 
-                            <button className="animated flipInX" style={{animationDelay:".4s"}}><NavLink to="/projects" className="button-nav">Our value</NavLink></button>                      
+                            <button className="animated flipInX" style={{animationDelay:".4s"}}><NavLink to="/responsibilities" className="button-nav">Our CSR</NavLink></button>                      
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={thirdslide} className="d-block w-100" alt="..." />
+                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640530974/Omakwaenergy/image3_llnotq.jpg" className="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <p className="section1 animated bounceInUp" style={{animationDelay:".3s"}}>
                                 We are committed to providing services that satisfy our clients’ business and domestic needs with integrity and honesty without compromising standards and quality.

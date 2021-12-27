@@ -2,15 +2,8 @@ import React, { Component } from 'react';
 import Underline from '../../components/textunderline/textunderline';
 import './home.css';
 import {NavLink} from 'react-router-dom';
-import flagshipproject from '../../images/project2.jpeg';
-import logo from '../../images/logo.svg';
-import logo1 from '../../images/logo1.png';
-import logo2 from '../../images/logo2.png';
-import logo3 from '../../images/logo3.png';
-import logo4 from '../../images/logo4.png';
 import {BsArrowRight} from 'react-icons/bs';
 import WOW from 'wowjs';
-// import Slider1 from '../../components/slider/slider1.js';
 import Slider from '../../components/bootstrapslider/slider';
 
 export class Home extends Component {
@@ -36,7 +29,9 @@ export class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-12">
-
+                                    <div className="home-about-text home-about-text2 wow pulse">
+                                    The company is a consortium of highly skilled and experienced professionals dedicated to excellence, innovation and the adoption of systems approach to problem solving.
+                                    </div>
                                 </div>
                             </div>
                             <div className="button-navlink wow slideInUp" data-wow-delay=".6s" data-wow-offset="30">
@@ -76,10 +71,10 @@ export class Home extends Component {
                                 <div className="col-lg-6 col-md-6 col-sm-6">
                                     <div className="home-flagship-image-section">
                                         <div className="home-flagship-image">
-                                            <img src={flagshipproject} alt="project2" width="100%" />
+                                            <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531044/Omakwaenergy/project2_cyqobj.jpg" alt="project2" width="100%" />
                                         </div>
                                         <div className="home-flagship-image-text">..Powered by <br />
-                                            <img src={logo} alt="logo" width="100%"/>
+                                            <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531387/Omakwaenergy/logo_dk7xih.svg" alt="logo" width="100%"/>
                                         </div>    
                                     </div>
                                 </div>
@@ -106,7 +101,7 @@ export class Home extends Component {
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column wow fadeInDown" data-wow-delay=".3s">
                                             <div className="home-service-grid-style home-service-grid-style1">
                                                 <NavLink to="/oil_and_gas_operation" className="home-service-nav">
-                                                    <div className="img"><img src={logo1} alt="grid-logo"/></div>
+                                                    <div className="img"><img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo1_ltfwpm.png" alt="grid-logo"/></div>
                                                     <h4>OIL AND GAS OPERATIONS</h4>
                                                 </NavLink>
                                             </div>
@@ -114,7 +109,7 @@ export class Home extends Component {
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column home-service-column2 wow fadeInDown"  data-wow-delay=".5s">
                                             <div className="home-service-grid-style home-service-grid-style2">
                                                 <NavLink to="/building_and_civil_works" className="home-service-nav">
-                                                    <div className="img"><img src={logo2} alt="grid-logo"/></div>
+                                                    <div className="img"><img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo2_ujtbzl.png" alt="grid-logo"/></div>
                                                     <h4>BUILDING CIVIL WORKS</h4>
                                                 </NavLink>
                                             </div>
@@ -122,7 +117,7 @@ export class Home extends Component {
                                         <div className="col-lg-3 col-md-6 col-sm-6 home-service-column home-service-column3 wow fadeInDown"  data-wow-delay=".7s">
                                             <div className="home-service-grid-style home-service-grid-style3">
                                                 <NavLink to="/dredging_and_marine_services" className="home-service-nav">
-                                                    <div className="img"><img src={logo3} alt="grid-logo"/></div>
+                                                    <div className="img"><img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo3_wyyobo.png" alt="grid-logo"/></div>
                                                     <h4>DREDGING, SAND BLASTING/WINNING</h4>
                                                 </NavLink>
                                             </div>
@@ -130,7 +125,7 @@ export class Home extends Component {
                                         <div className="col-lg-3 col-md-6 col-sm-6  home-service-column home-service-column4 wow fadeInDown"  data-wow-delay=".9s">
                                             <div className="home-service-grid-style home-service-grid-style4">
                                                 <NavLink to="/environmetal_projects" className="home-service-nav">
-                                                    <div className="img"><img src={logo4} alt="grid-logo"/></div>
+                                                    <div className="img"><img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531487/Omakwaenergy/logo4_ohksyp.png" alt="grid-logo"/></div>
                                                     <h4>ENVIRONMENTAL PROJECTS</h4>
                                                 </NavLink>
                                             </div>
@@ -158,7 +153,7 @@ export class Home extends Component {
                                 create business and employment for thousands of young people through our academy training programmes. Sigup below:
                             </div>
                             <div className="button-navlink" style={{paddingTop:'15px'}}>
-                                <NavLink to='/signup' target="_blank" className="nav">Sign Up</NavLink>
+                                <a href='http://eepurl.com/hQW_ef' target="_blank" className="nav">Sign Up</a>
                             </div>
                         </div>
                     </div>

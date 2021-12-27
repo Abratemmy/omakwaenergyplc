@@ -3,28 +3,36 @@ import Otherpages from '../../components/otherpages/otherpages';
 import Underline from '../../components/textunderline/textunderline';
 import './media.css';
 import data from '../../pages/Media/mediadata.js';
-// import Modal from './modal';
-import Slider from 'react-slick'
+import ReactPaginate from "react-paginate"
 
 function Media() {
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) =>{
         setToggleState(index);
     }
-    const settings = {
-        className: "center",
-        infinite: 0,
-        centerPadding: "90px",
-        slidesToShow: 3,
-        slidesToScroll:1,
-        speed: 500,
-        rows: 2,
-        dots:true,
-        slidesPerRow: 1,
-        className:"media-slide",
-      };
+    
+    const [pageNumber, setPageNumber] = useState(0)
+    const imagePerPage = 4
+    const pagesVisited = pageNumber * imagePerPage
 
-    const [openmodal, setOpenModal] = useState(false);
+    const displayImages = data.slice(pagesVisited, pagesVisited + imagePerPage).map(media =>{
+        return(
+            <div className="media-content">
+                {media.isImage ? <div className="mediaimg">
+                        <img src={media.image} alt="loading"/>
+                        <div className="media-title">{media.name}</div>
+                        <div className={media.className}></div>
+                    </div> :""
+                }
+            </div> 
+        )
+    })
+    const pageCount = Math.ceil(data.length / imagePerPage);
+    const changePage = ({selected}) => {
+        setPageNumber(selected)
+        window.scrollTo(0, 120)
+    } 
+
     return (
         <div className="">
             <Otherpages title="Gallery" pagetitle="Our media" />
@@ -47,25 +55,23 @@ function Media() {
                 <div className="content-tabs">
                     <div className={toggleState ===1 ?"content active-content" : "content"}>
                         {/* want to display the media photos here */}
-                        Gallery media
-                        <div className="media-content">
-                            {/* <div className="media-layer"> 6</div> */}
+                     
+                        <div className="">
                             <div className="media-img">
-                               <Slider {...settings}>
-                                {data.map(media =>{
-                                    return(
-                                        <div>
-                                            {media.isImage ? <div className="mediaimg"onClick={()=>{setOpenModal(true)}}>
-                                                    <img src={media.image} alt="loading"/>
-                                                    <div className="media-title">{media.name}</div>
-                                                    <div className={media.className}></div>
-                                                </div> :""
-                                            }
-                                        </div> 
-                                    )
-                                })}
-                                </Slider>
-                                {/* {openmodal && <Modal closeModal={setOpenModal}/>} */}
+                                <div className="grid-image">
+                                    {displayImages}
+                                </div>
+                                
+                                <ReactPaginate
+                                    previousLabel={"Prev"}
+                                    nextLabel={"Next"}
+                                    pageCount={pageCount}
+                                    onPageChange= {changePage}
+                                    containerClassName={"paginationBttns"}
+                                    previousLinkClassName={"previousBttn"}
+                                    nextLinkClassName={"nextBttn"}
+                                    activeClassName={"paginationActive"}
+                                 />
                             </div>
                         </div>
                         

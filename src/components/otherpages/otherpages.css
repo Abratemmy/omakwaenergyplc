@@ -1,7 +1,7 @@
 .otherpages-background{
     background-color: var(--black2Color);
     height: 300px;
-    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url('../../images/image2.jpeg');
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url('https://res.cloudinary.com/hayteetech/image/upload/v1640530975/Omakwaenergy/image2_n5mfnp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

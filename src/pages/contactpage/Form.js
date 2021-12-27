@@ -1,105 +1,100 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
+import emailjs from "emailjs-com";
 
+function Form() {
+  const history = useHistory();
+	const [values, setValues] = useState({
+		firstname: "",
+    lastname:"",
+    message:"",
+		email:""
+	});
+	const [errors, setErrors] = useState({});
 
-const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
-const validateForm = (errors) => {
-  let valid = true;
-  Object.values(errors).forEach(
-    (val) => val.length > 0 && (valid = false)
-  );
-  return valid;
-}
+	// get input values
+	const handleChange = (ev) => {
+		setValues({
+			...values,
+			[ev.target.name]: ev.target.value,
+		});
+	};
 
-class Register extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fullName: null,
-      email: null,
-      password: null,
-      errors: {
-        fullName: '',
-        email: '',
-        password: '',
-      }
-    };
-  }
+	// handle errors
+	const handleError = (targets) => {
+		let errorsValue = {};
+		if (!targets.firstname) errorsValue.firstname = "First name is required";
+    if (!targets.lastname) errorsValue.lastname = "Last name is required";
+    if (!targets.message) errorsValue.message = "Type  a required";
+    if (!targets.email) errorsValue.email = "Email  is required";
+    else if(!/\S+@\S+\.\S+/.test(targets.email)) errorsValue.email = "Email is invalid";
+		
+		if (Object.keys(errorsValue).length > 0) setErrors({ ...errorsValue });
+		else setErrors({});
 
-  handleChange = (event) => {
-    event.preventDefault();
-    const { name, value } = event.target;
-    let errors = this.state.errors;
+		return Object.keys(errorsValue).length;
 
-    switch (name) {
-      case 'fullName': 
-        errors.fullName = 
-          value.length < 5
-            ? 'Full Name must be 5 characters long!'
-            : '';
-        break;
-      case 'email': 
-        errors.email = 
-          validEmailRegex.test(value)
-            ? ''
-            : 'Email is not valid!';
-        break;
-      case 'password': 
-        errors.password = 
-          value.length < 8
-            ? 'Password must be 8 characters long!'
-            : '';
-        break;
-      default:
-        break;
+	};
+
+	// submit form
+	const submitForm = async (ev) => {
+		ev.preventDefault();
+		let v = handleError(values);
+
+		// check if there is any eror available and handle here 
+		if (v > 0) console.log("error");
+		//submit form here if no error availble
+		else {
+            sendEmail(ev);
+            history.push('/success_page');
+            console.log("submitted");
+        }
+	};
+    function sendEmail(ev){
+        emailjs.sendForm(
+          'service_iuv3umm',
+          'template_jl8r50m',
+          ev.target,
+          "user_J0GFEOTNEUpdJde9zQve9"
+      ).then(res=>{
+          console.log(res)
+
+      }).catch(err=>console.log(err))
     }
 
-    this.setState({errors, [name]: value});
-  }
+	return (
+		<div>         
+        <form className="contactform" onSubmit={submitForm}>
+          <div className="row">
+              <div className="col-lg-6 col-md-6 col-sm-12 contact-form-div">
+                  <input type="text" name="firstname"placeholder="First Name" onChange={handleChange}  className="inputfield"/>
+                  {errors ? <p> {errors.firstname }</p>: ""}
+              </div>
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    if(validateForm(this.state.errors)) {
-      console.info('Valid Form')
-    }else{
-      console.error('Invalid Form')
-    }
-  }
+              <div className="col-lg-6 col-md-6 col-sm-12  contact-form-div">
+                  <input type="text" name="lastname"placeholder="Last Name" onChange={handleChange} className="inputfield"/>
+                  {errors ? <p> {errors.lastname }</p>: ""}
+              </div>
 
-  render() {
-    const {errors} = this.state;
-    return (
-      <div className='wrapper'>
-        <div className='form-wrapper'>
-          <h2>Create Account</h2>
-          <form onSubmit={this.handleSubmit} noValidate>
-            <div className='fullName'>
-              <label htmlFor="fullName">Full Name</label>
-              <input type='text' name='fullName' onChange={this.handleChange} noValidate />
-              {errors.fullName.length > 0 && 
-                <span className='error'>{errors.fullName}</span>}
-            </div>
-            <div className='email'>
-              <label htmlFor="email">Email</label>
-              <input type='email' name='email' onChange={this.handleChange} noValidate />
-              {errors.email.length > 0 && 
-                <span className='error'>{errors.email}</span>}
-            </div>
-            <div className='password'>
-              <label htmlFor="password">Password</label>
-              <input type='password' name='password' onChange={this.handleChange} noValidate />
-              {errors.password.length > 0 && 
-                <span className='error'>{errors.password}</span>}
-            </div>
-            <div className='info'>
-              <small>Password must be eight characters in length.</small>
-            </div>
-            <div className='submit'>
-              <button>Create</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    );
-  }
+              <div className="col-lg-12 col-md-12 col-sm-12  contact-form-div">
+                  <input type="email"  name="email"placeholder="Email" onChange={handleChange}  className="inputfield"noValidate/>
+                  {errors ? <p> {errors.email }</p>: ""}
+              </div>
+
+              <div className="col-lg-12 col-md-12 col-sm-12">
+                  <textarea name="message" id="" cols="30" rows="5" placeholder="Message" className="textarea"onChange={handleChange}></textarea>
+                  {errors ? <p> {errors.message }</p>: ""}
+              </div>
+
+              <div className="col-lg-4 contact-submit-btn">
+                  <input type="submit" className="signUpButton" value="Submit" style={{marginTop:'30px', border:'none'}} />
+                  
+              </div>
+                  
+              </div>
+          </form> 
+		</div>
+	);  
 }
-export default Register
+export default Form
+

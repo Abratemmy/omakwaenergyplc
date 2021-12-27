@@ -13,6 +13,8 @@ import Oilandgas from '../../pages/servicepage/oilandgas';
 import Buildingcivil from '../../pages/servicepage/buildingcivil';
 import Dredging from '../../pages/servicepage/dredging';
 import Pagenotfound from '../error/error';
+import Testing from '../testing';
+import SuccessPage from '../../pages/contactpage/successPage';
 
 const Router = ()=>(
     <Switch>
@@ -29,6 +31,8 @@ const Router = ()=>(
         <Route exact path='/environmetal_projects' component={Environmental} />
         <Route exact path='/building_and_civil_works' component={Buildingcivil} />
         <Route exact path='/dredging_and_marine_services' component={Dredging} />
+        <Route exact path="/texting" component={Testing} />
+        <Route exact path='/success_page' component={SuccessPage} />
 
         <Route component={Pagenotfound}/>
     </Switch>
