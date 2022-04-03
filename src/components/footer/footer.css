@@ -35,6 +35,15 @@
     font-weight: lighter;
     font-size: 15px;
 }
+.footer-address2 p span a{
+    text-decoration: none;
+    color: var(--blackColor);
+    font-size: 18px;
+    transition: 0.4s all ease;
+}
+.footer-address2 p span a:hover{
+    color: var(--primaryColor);
+}
 .footerpagelogo{
     padding: 0px 80px;
 }

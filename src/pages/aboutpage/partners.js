@@ -1,10 +1,35 @@
 import React, { Component } from 'react'
 import Otherpages from '../../components/otherpages/otherpages'
 import Underline from '../../components/textunderline/textunderline'
-import Card from './aboutCard/card'
+import Card from './aboutCard/card';
+import Slider from "react-slick"
+import {IoIosArrowForward, IoIosArrowBack} from "react-icons/io"
 
 export class Partners extends Component {
+     
+    constructor(props) {
+        super(props);
+        this.next=this.next.bind(this);
+        this.previous=this.previous.bind(this);        
+    }
+    next(){
+        this.slider.slickNext();
+    }
+    previous(){
+        this.slider.slickPrev();
+    }
+
     render() {
+        var settings = {
+            arrows:true,
+            infinite: true,
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed: 10000,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            className:"homeslides"
+          };
         return (
             <div>
                 <Otherpages title="Customers and Patners" pagetitle="clients"/>
@@ -26,6 +51,24 @@ export class Partners extends Component {
                             </div>
                        
                         </div>
+
+                        <div className='partner-slide'>
+                            <Slider ref={c=> (this.slider = c)} {...settings} className="Slider">
+                                <div className='partner-img'>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648062472/Omakwaenergy/lemeridian_apeicx.png" alt="partner-image"/>
+                                </div>
+                                <div className=''>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648062472/Omakwaenergy/vks_qxmyhc.jpg" alt="partner-image"/>
+                                </div>
+                                        
+                            </Slider>
+                            {/* <div className="container">
+                                <div className="homeslide-arrow" >
+                                    <button className="arrow-btn prev" onClick={()=>this.slider.slickPrev()}><IoIosArrowBack  className="slider-arrow-left"/></button>
+                                    <button className="arrow-btn next" onClick={()=>this.slider.slickNext()}><IoIosArrowForward className="slider-arrow-right" /></button>
+                                </div>
+                            </div> */}
+                        </div>
                     </div>
                 </div>
 
@@ -46,9 +89,6 @@ export class Partners extends Component {
                             text3="Develop a portfolio of assets targeting oil & gas exploration in West Africa."
                             link3="strategy"
 
-                            topic4="Testimonies"
-                            text4="We dont disssapoint our Clients.We are alwats at the top of what we do. check to view our customers review"          
-                            link4="testimony"
                         />
                     </div>
 

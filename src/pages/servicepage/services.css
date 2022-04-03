@@ -1,3 +1,32 @@
+.oil-bg{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url("https://res.cloudinary.com/hayteetech/image/upload/v1640530975/Omakwaenergy/image2_n5mfnp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
+
+.environmental-bg{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url("https://res.cloudinary.com/hayteetech/image/upload/v1640532243/Omakwaenergy/media3_khjqku.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
+.dredging-bg{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url("https://res.cloudinary.com/hayteetech/image/upload/v1649024697/Omakwaenergy/dredging_fh6rj4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
+.civil-bg{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url("https://res.cloudinary.com/hayteetech/image/upload/v1649025060/Omakwaenergy/civil_tjamge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
 .otherservices-page{
     background: var(--backgroundColor);
     padding: 40px 0px;
@@ -26,6 +55,9 @@
 }
 .service-section:hover img{
     transform: scale(1.06);
+}
+.servicescontainer{
+    padding: 60px 0px;
 }
 .service-title{
     position: relative;
@@ -68,17 +100,17 @@
 .services-text{
     font-family: var(--textFamily);
     color: var(--textColor);
-    font-size:15px;
-    line-height: 30px;
+    font-size:17px;
+    line-height: 35px;
     text-align: justify;
     padding: 10px;
 }
 .services-text span{
     color:var(--primaryColor);
-    font-size: 16px;
+    font-size: 18px;
 }
 .services-text li{
-    font-size: 15px;
+    font-size: 17px;
 }
 .service-other{
     margin-top: 30px;

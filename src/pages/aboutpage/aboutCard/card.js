@@ -9,12 +9,12 @@ export class Card extends Component {
     componentDidMount(){
         new WOW.WOW().init();
     }
-    render(title, topic1,text1, link1, topic2,text2,link2, topic3,text3,link3, topic4,text4,link4) {
+    render(title, topic1,text1, link1, topic2,text2,link2, topic3,text3,link3) {
         return (
             <div className="aboutpage-card-container">
                 <div className="card-title">{this.props.title}</div>
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-sm-12  wow fadeInUp" data-wow-delay=".3s" data-wow-duration="2s">
+                    <div className="col-lg-4 col-md-4 col-sm-12  wow fadeInUp" data-wow-delay=".1s" data-wow-duration="2s">
                         <NavLink exact to={`/about/${this.props.link1}`} className="about-card-nav" >
                             <div className="card-background">
                                 <div className="card-container">
@@ -29,7 +29,7 @@ export class Card extends Component {
                            
                         </NavLink>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s">
+                    <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="2s">
                         <NavLink exact to={`/about/${this.props.link2}`} className="about-card-nav" >
                             <div className="card-background">
                                 <div className="card-container">
@@ -43,27 +43,13 @@ export class Card extends Component {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="2s">
+                    <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s">
                         <NavLink  exact to={`/about/${this.props.link3}`} className="about-card-nav" >
                             <div className="card-background">
                                 <div className="card-container">
                                     <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531488/Omakwaenergy/logo3_wyyobo.png" alt="about-logo" />
                                     <h4>{this.props.topic3}</h4>
                                     <p>{this.props.text3}</p>
-                                </div>
-                                <div className="about-card-icon">
-                                    <IoIosArrowForward className="about-icon-arrow" />
-                                </div>
-                            </div>
-                        </NavLink>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s" data-wow-duration="2s">
-                        <NavLink  exact to={`/about/${this.props.link4}`} className="about-card-nav" >
-                            <div className="card-background">
-                                <div className="card-container">
-                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640531487/Omakwaenergy/logo4_ohksyp.png" alt="about-logo" />
-                                    <h4>{this.props.topic4}</h4>
-                                    <p>{this.props.text4}</p>
                                 </div>
                                 <div className="about-card-icon">
                                     <IoIosArrowForward className="about-icon-arrow" />

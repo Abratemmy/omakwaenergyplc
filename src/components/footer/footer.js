@@ -21,8 +21,8 @@ function Footer() {
                             </p>
                             
                             <p><i className="fa fa-envelope" /> Email
-                                <span className="">info@omakwaenergy.com <br />
-                            ceo@omakwaenergy.com</span>
+                                <span className=""><a href="mailto:info@omakwaenergy.com" target="_blank"  rel="noopener noreferrer" >info@omakwaenergy.com </a> <br />
+                                <a href="mailto:omakwaenergy@gmail.com" target="_blank"  rel="noopener noreferrer" >omakwaenergy@gmail.com</a></span>
                             </p>            
                         </div>
                     </div>

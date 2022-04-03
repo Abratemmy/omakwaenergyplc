@@ -29,7 +29,7 @@ export class Responsibility extends Component {
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="csr-img">
-                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1640530974/Omakwaenergy/image3_llnotq.jpg" alt="loading"  />
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648065545/Omakwaenergy/businessconduct_secasb.jpg" alt="loading"  />
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-8 col-sm-12">
@@ -38,8 +38,7 @@ export class Responsibility extends Component {
                                     <Underline />
                                     <div className="csr-text wow slideInRight" data-wow-delay=".2s">
                                         At Omakwa Energy we are committed to maintaining the highest ethical standards in the personal and professional conduct of our employees, suppliers,
-                                        contractors and consultants.At Omakwa Energy we are committed to maintaining the highest ethical 
-                                        standards in the personal and professional conduct of our employees, suppliers, contractors and consultants.
+                                        contractors and consultants.
                                     </div>
                                     <div className="csr-text wow slideInRight" data-wow-delay=".2s">
                                     We seek to conduct our business activities in a fair, honest and ethical manner. Every person connected with our
@@ -57,7 +56,7 @@ export class Responsibility extends Component {
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 col-sm-12">
                                     <div className="csr-img">
-                                        <img src="" alt="loading" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648065544/Omakwaenergy/right_gymzuj.jpg" alt="loading" />
                                     </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8 col-sm-12">
@@ -65,7 +64,7 @@ export class Responsibility extends Component {
                                         <h1 style={{color:'var(--mainBlue)'}}>HUMAN RIGHTS</h1>
                                         <Underline />
                                         <div className="csr-text wow slideInRight" data-wow-delay=".2s">
-                                        We have respect for human dignity and the rights of the individual.
+                                        We recognize and protect the dignity of all human beings.
                                         We support the principles of, and promote respect for, the Universal Declaration of Human Rights.
                                         </div>
                                         <div className="csr-text wow slideInRight" data-wow-delay=".2s">
@@ -83,7 +82,7 @@ export class Responsibility extends Component {
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="csr-img">
-                                    <img src="" alt="loading" />
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648065544/Omakwaenergy/health_xbeckr.jpg" alt="loading" />
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-8 col-sm-12">
@@ -91,8 +90,7 @@ export class Responsibility extends Component {
                                     <h1 style={{color:'var(--mainBlue)'}}>HEALTH AND SAFETY</h1>
                                     <Underline />
                                     <div className="csr-text wow slideInRight" data-wow-delay="0.2s">
-                                    The health and safety of ADM Energy employees, contractors, partners and those directly affected by its business 
-                                    activities is of paramount importance to the Company. We are committed to providing a safe working environment for all and 
+                                    We are committed to providing a safe working environment for all and 
                                     commit to constantly assessing and monitoring health and safety risks and mitigating these to improve our performance.
                                     </div>
                                 </div>
@@ -105,7 +103,7 @@ export class Responsibility extends Component {
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 col-sm-12">
                                     <div className="csr-img">
-                                        <img src="" alt="loading" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1648065543/Omakwaenergy/environment_t5yakn.jpg" alt="loading" />
                                     </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8 col-sm-12">
@@ -113,7 +111,7 @@ export class Responsibility extends Component {
                                         <h1 style={{color:'var(--mainBlue)'}}>ENVIRONMENT</h1>
                                         <Underline />
                                         <div className="csr-text">
-                                        Protecting the environment is fundamental to our business. ADM Energy conducts its operations in a safe and
+                                        Protecting the environment is fundamental to our business. Omakwa Energy conducts its operations in a safe and
                                             environmentally responsible manner to the highest industry standards. The Company will comply with the legislation of each country in which it operates, 
                                         raising these minimum requirements when appropriate. It expects that its contractors match these same standards.
                                         </div>

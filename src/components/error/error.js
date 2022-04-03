@@ -8,7 +8,7 @@ export class Pagenotfound extends Component {
             <div className="errorpage">
                 <h1>Page not found:  Error 404
                     <br />
-                Go to: <NavLink to="/omakwaenergyplc" className="errornav">Home</NavLink>
+                Go to: <NavLink to="/" className="errornav">Home</NavLink>
                 </h1>
             </div>
         )

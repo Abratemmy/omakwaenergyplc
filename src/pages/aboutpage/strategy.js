@@ -37,7 +37,7 @@ export class Strategy extends Component {
                                     <div className="about-strategy-column">
                                         <h4>To operate in a safe and environmentally responsible manner</h4>
                                         <div className="about-strategy-text">
-                                            Omakwa Energy is committed to the highest standards of corporate social responsibility in its investing policy
+                                            Omakwa Energy ensure that the surrounding environment is free from hazards that will warrant the safety of workers and employees and also residents near industrial operations.
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@ export class Strategy extends Component {
                                     <div className="about-strategy-column">
                                         <h4>To secure access to capital and financial liquidity</h4>
                                         <div className="about-strategy-text">
-                                        Our team has extensive experience with raising funds and financing and structuring deals in the oil and gas sector.
+                                        Our team has vast experience with raising funds and financing and structuring deals in the oil and gas sector.
                                         </div>
                                     </div>
                                 </div>
@@ -91,14 +91,11 @@ export class Strategy extends Component {
                      sustainable energy to our esteemed customers"
                      link2="our_customer_partner"
 
-                    topic3="Testimonies"
-                    text3="We dont disssapoint our Clients.We are alwats at the top of what we do. check to view our customers review" 
-                    link3="testimony"
                     
-                    topic4="Our purpose" 
-                    text4="We provide a complete range of Engineering, 
+                    topic3="Our purpose" 
+                    text3="We provide a complete range of Engineering, 
                     Oil & Gas, Architectural, Environmental and consultancy services to the satisfaction of our clients’ demand." 
-                    link4="purpose_values"
+                    link3="purpose_values"
                     />
                 </div>
 

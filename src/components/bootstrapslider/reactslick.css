@@ -1,0 +1,117 @@
+.first-slide{
+    background: var(--mainBlue);
+    color: #fff;
+    padding: 60px 0px;
+    height: 400px;
+}
+.react-slick-title, .react-slick-title1{
+    font-size: 45px;
+    font-family: var(--textFamily);
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: left;
+}
+
+.dynamic-txts{
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.dynamic-txts li{
+    list-style: none;
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    padding: 7px 0px;
+    text-align: left;
+    color: var(--primaryColor);
+    font-family: var(--textFamily);
+    top: -3px;
+    animation: slide 11s steps(3) infinite;
+    transition: 0.5s all ease;
+}
+@keyframes slide {
+    100%{
+        top: -200px;
+    }
+}
+
+.Slider{
+    overflow: hidden;
+    width: 100%;
+}
+.background-pictures{
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.background-image1{
+    background: url("https://res.cloudinary.com/hayteetech/image/upload/v1640530974/Omakwaenergy/image1_gkjzis.jpg")
+}
+.background-image2{
+    background: url("https://res.cloudinary.com/hayteetech/image/upload/v1648056716/Omakwaenergy/omakwabg2_tiqe29.jpg")
+}
+.background-image3{
+    background: url("https://res.cloudinary.com/hayteetech/image/upload/v1648056716/Omakwaenergy/omakwabg3_ifleec.jpg")
+}
+.background-image4{
+    background: url("https://res.cloudinary.com/hayteetech/image/upload/v1640530975/Omakwaenergy/image2_n5mfnp.jpg");
+}
+.background-image5{
+    background: url("https://res.cloudinary.com/hayteetech/image/upload/v1648056716/Omakwaenergy/omakwabg5_fxotvn.jpg")
+}
+@media screen and (max-width: 960px){
+    .first-slide{
+        height: 300px;
+        padding: 40px 0px;
+    }
+    .wrapper{
+        max-width: 500px;
+        margin: auto!important
+    }
+    .background-pictures{
+        height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .react-slick-title1{
+        position: relative;
+        top: -8px!important;
+       
+    }
+}
+
+@media screen and (max-width: 780px){
+    .react-slick-title{
+        font-size: 30px;
+        font-family: var(--textFamily);
+        text-transform: capitalize;
+        font-weight: 600;
+        text-align:left;
+    }
+    .react-slick-title1{
+        position: relative;
+        top: -10px!important;
+        font-size: 30px;
+    }
+    .dynamic-txts li{
+        list-style: none;
+        font-size: 35px;
+        
+    }
+    .background-pictures{
+        height: 250px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}

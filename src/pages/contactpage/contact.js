@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {FaEnvelope, FaHome, FaPhoneAlt} from 'react-icons/fa';
 import './contact.css'
 import Underline from '../../components/textunderline/textunderline';
-import Otherpages from '../../components/otherpages/otherpages';
+import { NavLink } from 'react-router-dom';
 import {
     InfoWindow,
     withScriptjs,
@@ -44,12 +44,12 @@ export class Contact extends Component {
         const MapWithAMarker = withScriptjs(withGoogleMap(props =>
             <GoogleMap
               defaultZoom={10}
-              defaultCenter={{ lat: 6.451549, lng: 3.429530 }}
+              defaultCenter={{ lat: 4.868282602937601, lng: 6.908971168238508}}
             >
               <Marker
                 draggable = {true}
                 onDragEnd = {this.onMarkerDragEnd}
-                    position={{ lat: 6.451549, lng: 3.429530 }}>
+                    position={{ lat: 4.868282602937601, lng: 6.908971168238508 }}>
                   <InfoWindow>
                       <div>Omakwa energy Location</div>
                   </InfoWindow>
@@ -58,8 +58,15 @@ export class Contact extends Component {
           ));
         return (
             <div>
-                {/* <Otherpages title="Contact" pagetitle="contact"/> */}
-                <Otherpages title="Contact us" pagetitle="contact" />
+                <div className='contact-bg'>
+                    <div className="page-container otherpages-container">
+                        <h1 className="other-page-heading wow fadeInUp">Contact</h1>
+                        <div className="other-pages-span wow fadeInUpBig">
+                            <NavLink to='/omakwaenergyplc' className="otherpage-navlink">Home </NavLink>  
+                            > <span>contact</span>
+                        </div>
+                    </div>
+                </div>
                 <div className="container contact-container">
                     <div className="row no-gutters">
                         <div className="col-lg-4 col-md-12 col-sm-12 contact-details">
@@ -79,7 +86,8 @@ export class Contact extends Component {
                                     <div className="contact-logo"><FaEnvelope className="contact-icons"/></div>
                                     <div className="contact-address-title">
                                         <h3>Email</h3>
-                                        <h6>info@omakwaenergy.com , ceo@omakwaenergy.com</h6>
+                                        <h6><a href="mailto:info@omakwaenergy.com" target="_blank"  rel="noopener noreferrer" >info@omakwaenergy.com </a></h6>
+                                        <h6><a href="mailto:omakwaenergy@gmail.com" target="_blank" rel="noopener noreferrer">omakwaenergy@gmail.com</a></h6>
                                     </div>
                                 </div>
                                 <div className="contact-detail-logoaddress">

@@ -3,6 +3,57 @@
     background:rgb(227, 236, 227);
  
 }
+.home-card{
+    position: relative;
+    margin: 40px 0px;
+}
+.home-card-content{
+    text-align: center;
+    color:#fff;
+    font-family: var(--textFamily);
+}
+.home-card-content .card{
+    padding: 20px 0px;
+    height: 360px;
+    transition: 0.4s all ease
+}
+.home-card-content .card:hover{
+    opacity: 0.7
+}
+.home-card-content .card1{
+    background: var(--primaryColor)
+}
+.home-card-content .card2{
+    background-color:  #2b479c 
+}
+.home-card-content .card3{
+    background: rgb(37, 88, 37);
+}
+.card-body .card-icon{
+    font-size: 30px;
+}
+.card-body .card-title{
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: 600
+}
+.card-body .card-text{
+    font-size: 18px;
+    line-height: 32px
+}
+.card-body .btn{
+    margin-top: 15px;
+    border: 2px solid #fff;
+    color:#fff;
+    font-family: var(--textFamily);
+    background: transparent;
+    transition: 0.4s all ease;
+}
+.card-body .btn:hover{
+    border: 2px solid rgb(226, 224);
+    background: rgb(226, 224, 224);
+    color: var(--blackColor)
+}
 .home-about-text{
     color:var(--blackColor);
     line-height: 30px;
@@ -70,8 +121,9 @@
 
 /* home service css starts here */
 .home-service-container{
-    background:rgb(227, 236, 227);
+    background:#fff;
     padding: 30px 0px;
+    margin: 20px 0px 30px 0px
 }
 .home-service h1{
     text-align: center;
@@ -140,13 +192,23 @@
     padding: 20px 10px 10px 10px;
     font-family: var(--textFamily);
 }
-
+/* another section starts here */
+.home-picture{
+    background:var(--mainBlue);
+    padding: 50px 0px;
+    color:#fff;
+    font-family: var(--textFamily);
+}
+.home-picture img{
+    width:100%;
+    padding-bottom: 10px;
+}
 /* .home-signup something  start here*/
 .home-container-signup{
     padding:30px 200px;
 }
 .home-signup-title h1{
-    color:var(--mainBlue);   
+    color:#fff;   
 }
 .home-signup{
     border: 2px solid var(--mainBlue);
@@ -158,7 +220,21 @@
 /* home-contact starts here */
 .home-contact{
     background:var(--primaryColor);
-    padding: 30px 0px
+    padding: 30px 0px;
+    color:#fff
+}
+.home-contact .home-text{
+    color:#fff
+}
+.home-contact .button-navlink .nav{
+    border:2px solid  var(--mainBlue);
+    color: #fff;
+   
+}
+.home-contact .button-navlink .nav:hover{
+    background: var(--mainBlue);
+    border:2px solid transparent;
+    color: #fff;
 }
 .home-contact-container{
     background: var(--mainBlue);
@@ -193,6 +269,14 @@
     .home-about-text2{
         padding-top: 10px;
     }
+    .home-card{
+        position: relative;
+        top: 0px;
+    }
+    .home-card-content .card{
+        padding: 20px 0px;
+        height:auto;
+    }
 }
 
 @media screen and (max-width: 760px){
@@ -214,4 +298,5 @@
     .title-underline{
         padding-left: 34vw;
     }
+  
 }

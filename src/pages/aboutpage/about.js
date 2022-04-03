@@ -92,10 +92,6 @@ export class About extends Component {
                         text3="Omakwa Energy partners with several leading organizations in Solar Power to deliver cutting edge and
                          sustainable energy to our esteemed customers"
                          link3="our_customer_partner"
-
-                        topic4="Testimonies"
-                        text4="We dont disssapoint our Clients.We are alwats at the top of what we do. check to view our customers review"          
-                        link4="testimony"
                     />
                 </div>
 

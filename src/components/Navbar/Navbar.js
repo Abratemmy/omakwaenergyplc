@@ -36,7 +36,7 @@ function Navbar() {
                 <div className="nav-palava">
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/omakwaenergyplc"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
+                            <NavLink to="/"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
 
                         <span className="dropdown-span">
@@ -56,7 +56,7 @@ function Navbar() {
                         </span>
                         <span className="dropdown-span">
                             <li className="nav-item nav-item-dropdown">
-                                <a href="#" activeClassName="active" className="nav-links" onClick={handleClick}>Service</a>
+                                <a href="#" activeClassName="active" className="nav-links" onClick={handleArrow}>Service</a>
                                 <div className="nav-dropdown">
                                     <NavLink to="/oil_and_gas_operation" className="nav-dropdown-nav" onClick={handleClick}>Oil & Gas Operation</NavLink>
                                     <NavLink to="/environmetal_projects" className="nav-dropdown-nav" onClick={handleClick}>Environmental projects</NavLink>
@@ -68,9 +68,9 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink to="/media"activeClassName="active" className="nav-links" onClick={handleClick}>Media</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <NavLink to="/responsibilities"activeClassName="active" className="nav-links" onClick={handleClick}>CSR</NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <NavLink to="/contact"activeClassName="active" className="nav-links" onClick={handleClick}>Contact us</NavLink>
                         </li>                    

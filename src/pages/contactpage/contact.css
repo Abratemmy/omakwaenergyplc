@@ -1,6 +1,13 @@
 .contact-container{
     padding: 40px 0px;
 }
+.contact-bg{
+    background: linear-gradient(180deg, rgba(66, 182, 72, 0.443), rgba(36, 82, 10, 0.443)), url("https://res.cloudinary.com/hayteetech/image/upload/v1648066466/Omakwaenergy/contactbg_bgn62i.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
 .contact-details{
     background-color: var(--mainBlue);
     color:#fff;
@@ -31,7 +38,14 @@
     font-size: 15px;
     color:#fff;
 }
-
+.contact-detail-logoaddress h6 a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.4s all ease;
+}
+.contact-detail-logoaddress h6 a:hover{
+    color: var(--primaryColor)
+}
 
 
 

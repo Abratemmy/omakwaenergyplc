@@ -122,9 +122,6 @@ export class Purposes extends Component {
                          sustainable energy to our esteemed customers"
                          link3="our_customer_partner"
 
-                        topic4="Testimonies"
-                        text4="We dont disssapoint our Clients.We are alwats at the top of what we do. check to view our customers review"           
-                        link4="testimony"
                     />
 
                 </div>

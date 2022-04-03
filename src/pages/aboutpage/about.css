@@ -125,3 +125,17 @@
     line-height: 30px;
     padding-top: 40px;
 }
+.partner-slide{
+    /* margin: 0px 70px; */
+    padding:  50px 0px;
+    max-width: 500px;
+    margin: auto!important;
+    text-align: center;
+}
+.partner-slide img{
+    /* width: 100%; */
+}
+.partner-slide .homeslide-arrow{
+    display: flex;
+    justify-content: space-between;
+}
