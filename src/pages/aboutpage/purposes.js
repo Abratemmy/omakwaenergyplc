@@ -118,8 +118,8 @@ export class Purposes extends Component {
                         link2="strategy"
                         
                         topic3="Our Customers & partners"
-                        text3="Omakwa Energy partners with several leading organizations in Solar Power to deliver cutting edge and
-                         sustainable energy to our esteemed customers"
+                        text3="Omakwa Energy partners with several leading organizations in Engineering, Oil & Gas, and Consultancy services to bring satisfaction
+                        to our esteemed customers"
                          link3="our_customer_partner"
 
                     />

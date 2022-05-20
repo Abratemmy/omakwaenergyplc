@@ -201,7 +201,7 @@ export class Home extends Component {
 
                     <div className='home-picture'>
                         <div className='page-container'>
-                            <h1>More Than Just Power</h1>
+                            <h1>We are committed</h1>
                             <p>We are constantly innovating, bringing new initiatives and services to deliver value to you.​</p>
                             <div className='row'>
                                 <div className='col-lg-8 col-md-8 col-sm-12'>
@@ -226,8 +226,8 @@ export class Home extends Component {
                             </div>
 
                             <div className="home-text">
-                                We are a leading renewable energy and power solutions company. We have a vision and the passion to drive an increase in Nigeria’s energy capacity and access,
-                                create business and employment for thousands of young people through our academy training programmes. Sigup below:
+                            The company is a consortium of highly skilled and experienced professionals
+                             dedicated to excellence, innovation and the adoption of systems approach to problem solving. Sigup below:
                             </div>
                             <div className="button-navlink" style={{paddingTop:'15px'}}>
                                 <a href='http://eepurl.com/hQW_ef' target="_blank" className="nav">Sign Up</a>

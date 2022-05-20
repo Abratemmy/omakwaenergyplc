@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Otherpages from '../../components/otherpages/otherpages';
-import {IoIosPeople} from 'react-icons/io';
+import {FaItchIo, FaPython} from 'react-icons/fa';
 import {SiGumroad} from 'react-icons/si';
-import {MdAttachMoney} from 'react-icons/md';
 import {GiHealthDecrease} from 'react-icons/gi'
 import Card from './aboutCard/card';
 
@@ -18,12 +17,13 @@ export class Strategy extends Component {
                             <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className="about-strategy-container">
                                     <div className="about-strategy-icon wow slideInLeft" data-wow-duration="2s">
-                                        <IoIosPeople className="strategy-icon"/>
+                                        <FaItchIo className="strategy-icon"/>
                                     </div>
                                     <div className="about-strategy-column">
-                                        <h4>To build the best in class management team</h4>
+                                        <h4>Improving Operational Efficiency</h4>
                                         <div className="about-strategy-text">
-                                        Our team has extensive experience with raising funds and financing and structuring deals in the oil and gas sector.
+                                        Omakwa Energy creates value through systematic and repeatable actions that are clear and addressable for everyone in the company.
+                                        We reduce waste in time, effort and materials as much as possible, while still producing a high-quality service or product.
                                         </div>
                                     </div>
                                 </div>
@@ -46,12 +46,12 @@ export class Strategy extends Component {
                             <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className="about-strategy-container">
                                     <div className="about-strategy-icon wow slideInLeft" data-wow-duration="2s">
-                                        <MdAttachMoney className="strategy-icon"/>
+                                        <FaPython className="strategy-icon"/>
                                     </div>
                                     <div className="about-strategy-column">
-                                        <h4>To secure access to capital and financial liquidity</h4>
+                                        <h4>Business Sustainability</h4>
                                         <div className="about-strategy-text">
-                                        Our team has vast experience with raising funds and financing and structuring deals in the oil and gas sector.
+                                        Omakwa Energy create long-term value by taking into consideration how the organization operates in the ecological, social, and economic environments. 
                                         </div>
                                     </div>
                                 </div>
@@ -87,8 +87,8 @@ export class Strategy extends Component {
                     link1=""
 
                     topic2="Our Customers & partners"
-                    text2="Omakwa Energy partners with several leading organizations in Solar Power to deliver cutting edge and
-                     sustainable energy to our esteemed customers"
+                    text2="Omakwa Energy partners with several leading organizations in Engineering, Oil & Gas, and Consultancy services to bring satisfaction
+                    to our esteemed customers"
                      link2="our_customer_partner"
 
                     

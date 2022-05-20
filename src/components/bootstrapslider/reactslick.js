@@ -27,7 +27,7 @@ export class Reactslick extends Component {
                                         <li><span className='animated slideInUp' style={{animationDelay:'.9s'}}>Oil and Gas</span></li>
                                         <li><span className='animated slideInUp' style={{animationDelay:'1.s'}}>Consultancy</span></li>
                                     </ul>
-                                    <span className='react-slick-title1 animated slideInUp' style={{animationDelay:'1s'}} style={{position:"relative", top: "-3px"}}> services to the satisfaction of our clients’ demands.</span>
+                                    <span className='react-slick-title1 animated slideInUp' style={{animationDelay:'1s', position:"relative", top: "-3px"}}> services to the satisfaction of our clients’ demands.</span>
                                 </div>
                             </div>
                         </div>
@@ -38,8 +38,6 @@ export class Reactslick extends Component {
                 <div className='col-lg-6 col-md-12 col-sm-12'>
                     <Slider ref={c=> (this.slider = c)} {...settings} className="Slider">
                         <div className=" background-pictures background-image1" style={{}}>  </div>
-
-                        <div className="background-pictures background-image3 "></div> 
                         <div className="background-pictures background-image2 "></div> 
                         <div className="background-pictures background-image4 "></div> 
                         <div className="background-pictures background-image5 "></div>                   

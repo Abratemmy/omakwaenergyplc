@@ -44,8 +44,7 @@ export class Partners extends Component {
                             <div className="row">
                                 <div className="col-lg-3 col-md-2 col-sm-12"></div>
                                 <div className="col-lg-6 col-md-10 col-sm-12">
-                                Omakwa Energy works with seasoned and world class OEMs in 
-                                Solar Energy Equipment/Technology to bring clean and sustainable energy to to our valued Customers.
+                                Omakwa Energy works with seasoned and world class organizations in Engineering, Oil & Gas, and Consultancy services to bring satisfaction to our valued Customers.
                                 </div>
                                 <div className="col-lg-3 col-md-2 col-sm-12"></div>
                             </div>
