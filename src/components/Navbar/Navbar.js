@@ -36,7 +36,7 @@ function Navbar() {
                 <div className="nav-palava">
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
+                            <NavLink to="/" exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
 
                         <span className="dropdown-span">
